@@ -1,0 +1,13 @@
+{
+	"workspace": [
+		"./app",
+		"./server",
+		"./core"
+	],
+	"nodeModulesDir": "auto",
+	"fmt": {
+		"semiColons": true,
+		"singleQuote": false,
+		"useTabs": true
+	}
+}
