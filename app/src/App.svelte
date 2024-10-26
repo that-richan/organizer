@@ -1,7 +1,9 @@
-Organizer
+<script lang="ts">
+    import "./assets/css/main.css";
+    import Router from "svelte-spa-router";
+    import { routes } from "./routes";
+</script>
 
-<style global lang="postcss">
-	@tailwind utilities;
-	@tailwind components;
-	@tailwind base;
-</style>
+<main class="grid-container">
+    <Router {routes} />
+</main>

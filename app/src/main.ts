@@ -1,8 +1,9 @@
-import { mount, type Component } from "svelte";
+import { mount } from "svelte";
+import { importSvelteComponent } from "./utils/importSvelteComponent.ts";
 
-// Deno does not support declare module.
-const App = ((await import("./App.svelte")) as { default: Component }).default;
-
-mount(App, {
-	target: document.body,
-});
+// Not using top-level await here because it causes the Promise to be indefinitely pending (some sort of circular dependency is happening probably)
+importSvelteComponent(() => import("./App.svelte")).then(App => {
+	mount(App, {
+		target: document.body,
+	});
+})
