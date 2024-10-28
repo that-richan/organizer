@@ -1,0 +1,6 @@
+@layer components {
+	a:not(.plain),
+	.link {
+		@apply drop-shadow-xl rounded p-2 hover:text-white hover:bg-tertiary;
+	}
+}

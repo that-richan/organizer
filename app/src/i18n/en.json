@@ -1,0 +1,20 @@
+{
+	"landing": {
+		"home": {
+			"title": "Welcome to Organizer!"
+		},
+		"layout": {
+			"goToApp": "Go to app"
+		}
+	},
+	"app": {
+		"layout": {
+			"menu": {
+				"home": "Home"
+			}
+		}
+	},
+	"notFound": {
+		"message": "Oops! This page does not exist."
+	}
+}

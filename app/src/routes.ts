@@ -24,9 +24,15 @@ export const appRoutes = {
 	"*": importRoute("NotFound"),
 } satisfies RouteDefinition;
 
+export const landingRoutes = {
+	"/": importRoute("(landing)/Home"),
+	"*": importRoute("NotFound"),
+};
+
 export const routes = {
-	"/": importRoute("Home"),
 	"/app": importRoute("app/layout"),
 	"/app/*": importRoute("app/layout"),
+	"/": importRoute("(landing)/layout"),
+	"/*": importRoute("(landing)/layout"),
 	"*": importRoute("NotFound"),
 } satisfies RouteDefinition;

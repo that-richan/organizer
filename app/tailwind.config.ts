@@ -1,9 +1,13 @@
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
 	content: ["./*.html", "./src/**/*.{html,svelte,js,ts}"],
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: ["Oxanium", ...defaultTheme.fontFamily.sans],
+			},
 			colors: {
 				primary: {
 					DEFAULT: "#679B9B",

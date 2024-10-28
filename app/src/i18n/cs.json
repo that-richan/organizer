@@ -1,0 +1,20 @@
+{
+	"landing": {
+		"home": {
+			"title": "Vítejte v Organizéru!"
+		},
+		"layout": {
+			"goToApp": "Přejít do aplikace"
+		}
+	},
+	"app": {
+		"layout": {
+			"menu": {
+				"home": "Domů"
+			}
+		}
+	},
+	"notFound": {
+		"message": "Oops! Tato stránka neexistuje."
+	}
+}

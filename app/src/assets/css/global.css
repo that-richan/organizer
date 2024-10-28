@@ -1,5 +1,9 @@
 body {
-	@apply bg-surface min-h-dvh;
+	@apply bg-surface min-h-dvh flex flex-col;
+}
+
+body > main {
+	@apply flex-1;
 }
 
 .grid-container {
@@ -34,6 +38,6 @@ body {
 
 @media screen(xl) {
 	.grid-container {
-		--container-width: 1000px;
+		--container-width: 1200px;
 	}
 }
