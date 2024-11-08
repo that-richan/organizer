@@ -1,43 +1,13 @@
-body {
-	@apply bg-surface min-h-dvh flex flex-col;
-}
-
-body > main {
-	@apply flex-1;
-}
-
-.grid-container {
-	--container-width: 100%;
-	@apply grid grid-cols-[1fr,var(--container-width),1fr];
-
-	& > * {
-		@apply col-start-2;
+@layer base {
+	html {
+		@apply scroll-smooth;
 	}
-	& > *.full-width {
-		@apply col-start-1 col-span-full;
+	
+	body {
+		@apply bg-surface min-h-dvh flex flex-col;
 	}
-}
-
-@media screen(sm) {
-	.grid-container {
-		--container-width: 500px;
-	}
-}
-
-@media screen(md) {
-	.grid-container {
-		--container-width: 700px;
-	}
-}
-
-@media screen(lg) {
-	.grid-container {
-		--container-width: 800px;
-	}
-}
-
-@media screen(xl) {
-	.grid-container {
-		--container-width: 1200px;
+	
+	body > main {
+		@apply flex-1;
 	}
 }

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
 @import "global.css";
 @import "link.css";
+@import "grid-container.css";
 
 @tailwind utilities;
 @tailwind components;
