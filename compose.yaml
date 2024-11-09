@@ -1,0 +1,20 @@
+services:
+  database:
+    build: 
+      context: ./database
+      pull: true
+    environment:
+      LANG: cs_CZ.utf8
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_INITDB_ARGS: "--locale-provider=icu --icu-locale=cs-CZ"
+    ports:
+      - "${DATABASE_PORT}:5432"
+
+  app:
+    build:
+      context: ./
+      dockerfile: ./app/Dockerfile
+      pull: true
+    ports:
+      - "${APP_PORT}:80"

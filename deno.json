@@ -9,5 +9,9 @@
 		"semiColons": true,
 		"singleQuote": false,
 		"useTabs": true
+	},
+	"tasks": {
+		"dev": "docker compose up database --build",
+		"docker-build": "docker compose pull && docker compose build && docker save -o build.tar $(docker compose config --images)"
 	}
 }
