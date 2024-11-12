@@ -1,0 +1,6 @@
+version: "3"
+
+tasks:
+  run:
+    cmds:
+      - deno run -A npm:drizzle-kit {{.CLI_ARGS}}

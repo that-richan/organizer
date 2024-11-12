@@ -1,8 +1,9 @@
 {
 	"workspace": [
 		"./app",
-		"./server",
-		"./core"
+		"./core",
+		"./database",
+		"./server"
 	],
 	"nodeModulesDir": "auto",
 	"fmt": {

@@ -1,12 +1,13 @@
 services:
   database:
-    build: 
+    build:
       context: ./database
       pull: true
     environment:
       LANG: cs_CZ.utf8
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
       POSTGRES_INITDB_ARGS: "--locale-provider=icu --icu-locale=cs-CZ"
     ports:
       - "${DATABASE_PORT}:5432"
